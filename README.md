@@ -1,4 +1,4 @@
-# Smart-Vertigo-Dataset
+# Smartphone-Based Video Dataset of Eye Movements and Oculomotor Findings in Acute Vertigo: The SMART-VERTIGO Database
 
 Video dataset of normal and pathological eye movements and oculomotor findings recorded using smartphones in an emergency department setting.
 
