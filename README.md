@@ -50,6 +50,15 @@ https://doi.org/10.5281/zenodo.23106946
 **Video-processing scripts (GitHub):**  
 https://github.com/elvira-cortese/Smart-Vertigo-Dataset/tree/main/CODE/video_processing
 
+### Video-processing code documentation
+
+The Python scripts used for video processing and video-level quality control are available in the GitHub repository under `CODE/video_processing`.
+
+Detailed documentation of the processing procedures, software dependencies, input and output configuration, and script execution is provided in the [Video Processing README](https://github.com/elvira-cortese/The-SMART-VERTIGO-Dataset/blob/main/CODE/video_processing/README.md).
+
+Some scripts contain hardcoded file paths that must be adapted to the user's local environment before execution. Users should consult the Video Processing README for instructions on configuring these paths and the required processing parameters before running the scripts.
+
+
 ## Zenodo resources
 
 - **`README.md`** — Dataset-level documentation, repository structure, access information, and guidance for reuse.
