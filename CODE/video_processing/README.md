@@ -1,6 +1,72 @@
+
 # Video processing
 
 This directory contains the scripts used for video processing and video-level quality control in the Smart Vertigo Dataset.
+
+## Configuring and running the Python scripts
+
+The Python scripts provided in this directory may require users to configure file paths and processing parameters before execution. These settings depend on the script and must be adapted to the user's local environment.
+
+### Configuring input and output paths
+
+Before running a script, users should:
+
+1. Download or clone the repository to their local computer.
+2. Open the relevant Python script (`.py`) in a code editor, such as Visual Studio Code.
+3. Identify the variables or settings defining input files, output files, working directories, or processing parameters.
+4. Replace any example or hardcoded paths with the corresponding locations on their own computer.
+5. Verify that the required input files exist and that the output directories are accessible.
+6. Save the configured script before execution.
+
+For example, a script containing a Windows file path such as:
+
+```python
+input_path = r"C:\Users\Example\Videos\input.mp4"
+```
+
+would need to be adapted to the user's local directory:
+
+```python
+input_path = r"D:\Research\SMART-VERTIGO\Videos\input.mp4"
+```
+
+These examples are illustrative. The actual variable names and configuration requirements differ between scripts.
+
+### Script-specific configuration
+
+- **`spatial_crop_320x320.py`:** Users must configure the source video, output location, and crop parameters (`x`, `y`, `w`, and `h`). The crop coordinates must be selected for each video according to the position of the region of interest. The example coordinates included in the script are not universally applicable.
+
+- **`extract_video_frames.py`:** Users must configure the input video path and the destination directory for the extracted PNG frames.
+
+- **`audit_and_remove_video_audio.py`:** Users must configure the relevant input, output, and report directories. The repository version runs in audit-only mode by default and does not overwrite original video files. Users should review the processing settings before enabling audio removal.
+
+### Software requirements
+
+Users should install Python and the dependencies required by the script they intend to run.
+
+The software versions used for the original processing workflow are documented in the corresponding sections below.
+
+FFmpeg and `ffprobe` must also be available when running scripts that depend on them.
+
+### Running the scripts
+
+After configuring the required paths and parameters, open a terminal in the directory containing the script and execute:
+
+```bash
+python script_name.py
+```
+
+Replace `script_name.py` with the name of the script to be executed.
+
+The scripts do not currently provide a unified command-line interface (CLI) for configuring all input and output paths dynamically. Users should therefore review the configuration requirements of each script before execution.
+
+### Data preservation and reproducibility
+
+Users are encouraged to retain copies of their original input videos, document any manually selected processing parameters, and verify the generated outputs.
+
+In particular, the spatial-cropping coordinates must be adapted individually to the source videos and should not be assumed to be applicable across recordings.
+
+The audio quality-control script provides an audit-only mode that allows users to inspect audio streams without modifying the original video files.
 
 ## Spatial cropping: 320 × 320 and 960 × 320
 
@@ -179,4 +245,6 @@ No custom code in this directory was used to generate the dataset metadata table
 ## Authors and development
 
 The video-processing scripts were developed by Elvira Cortese and Benjamin Duvieusart.
+
 Generative AI tools were used to assist with the development and refinement of some of the scripts included in this repository. All AI-generated or AI-suggested code was reviewed, adapted, and validated by the human authors.
+
