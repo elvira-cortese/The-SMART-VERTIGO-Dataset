@@ -33,19 +33,13 @@ SMART-VERTIGO Dataset resources
 ### Repository locations
 
 **Zenodo dataset:**  
-
+https://doi.org/10.5281/zenodo.24351088
 
 **Data Use Agreement (DUA):**  
-https://doi.org/10.5281/zenodo.24322951
+https://doi.org/10.5281/zenodo.24351926
 
 **GitHub repository:**  
 https://github.com/elvira-cortese/Smart-Vertigo-Dataset
-
-**Archived video-processing scripts (Zenodo; all versions):**  
-
-
-**Archived video-processing scripts (Zenodo; v1.0.2):**  
-
 
 **Video-processing scripts (GitHub):**  
 https://github.com/elvira-cortese/Smart-Vertigo-Dataset/tree/main/CODE/video_processing
