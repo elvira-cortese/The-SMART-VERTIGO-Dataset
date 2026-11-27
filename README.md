@@ -56,9 +56,9 @@ Some scripts contain hardcoded file paths that must be adapted to the user's loc
 ## Zenodo resources
 
 - **`README.md`** — Dataset-level documentation, repository structure, access information, and guidance for reuse.
-- **`01_Cropped_Videos_No_Audio/`** — Cropped smartphone eye-movement videos with audio removed.
-- **`02_Smart_Vertigo_Dataset.xlsx`** — Structured video-level dataset and accompanying data dictionary, controlled vocabularies, filename grammar, and clinical-label catalogues.
-- **`03_Binary_Segmentation_Masks/`** — A small representative subset of binary semantic segmentation masks delineating the iris and sclera (PNG format), provided to illustrate segmentation outputs.
+- **`1_Cropped_Videos_No_Audio/`** — Cropped smartphone eye-movement videos with audio removed.
+- **`2_Smart_Vertigo_Dataset.xlsx`** — Structured video-level dataset and accompanying data dictionary, controlled vocabularies, filename grammar, and clinical-label catalogues.
+- **`3_Binary_Segmentation_Masks/`** — A small representative subset of binary semantic segmentation masks delineating the iris and sclera (PNG format), provided to illustrate segmentation outputs.
 - **`4_video_metadata.xlsx`** – Comprehensive technical metadata for individual video recordings, including descriptive statistics, distributions of technical parameters, and quality control assessment results.
 - **`Data_Use_Agreement_SMART_VERTIGO.docx`** — Data Use Agreement (DUA) governing access to and use of the restricted dataset.
 
